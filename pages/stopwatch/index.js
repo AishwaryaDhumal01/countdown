@@ -10,6 +10,7 @@ const App = () => {
 
 
   useEffect(() => {
+
     let id = null;
     if (time) {
       id = setInterval(() => {
@@ -34,7 +35,7 @@ const App = () => {
             <span style={{ fontSize: 300 }}>{(count / 10) % 100}</span>
             {/* <span style={{ fontSize: 300 }} >{(count / 10) % 1000}</span><br></br><br></br> */}
           </div>
-          <Button style={{ fontSize: 50 }} variant="success" onClick={() => setTime(true)} >start</Button>{' '}
+          <Button s tyle={{ fontSize: 50 }} variant="success" onClick={() => setTime(true)} >start</Button>{' '}
           <Button style={{ fontSize: 50 }} variant="primary" onClick={() => setTime(false)} >stop</Button>{' '}
           <Button style={{ fontSize: 50 }} variant="info" onClick={() => setCount(0)}>reset</Button>{' '}
         </center>
